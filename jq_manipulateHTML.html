@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+  <button id="b1">button 1</button>
+  <button id="b2">button 2</button>
+  <button id='b3'>button 3</button>
+  <button id="b4">button 4</button>
+  <br><br>
+  <div id="block" style="background-color: aqua; height: 100px; width: 100px;">
+    <p>this is a p tag</p>
+    <a href="#" id="link">LINK</a>
+  </div>
+
+  <input type="text" id="i1">
+  <script>
+    $('#b1').click(function(){
+      var txt = $('#block').text();
+      alert(txt);
+    });
+    $('#b2').click(function(){
+      $('#block').html('<h5>sumit kumar</h5>');
+    });
+    $('#b3').click(function(){
+      var value = $('#i1').val();
+      alert(value);
+    });
+    $('#b4').click(function(){
+      var value = $('#link').attr('href');
+      alert(value);
+    });
+  </script>
+</body>
+</html>

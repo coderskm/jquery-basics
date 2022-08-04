@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+  <ul id="list">
+    <li>
+      <span id="span1">item 1</span>
+    </li>
+    <li>
+      <span id="span2">item 2</span>
+    </li>
+  </ul>
+  <ul id="list">
+    <li>child 1</li>
+    <li>child 2</li>
+    <li id="item1">child 3</li>
+    <li>child 4</li>
+    <li id="item2">child 5</li>
+    <li>child 6</li>
+   
+  </ul>
+  <script>
+    // var elm = $('#span1').parents();
+    // elm.css('border','1px solid red')
+    // var elm = $('#list').find('#span2');
+    // elm.css('border','1px solid red')
+    var elm = $('#item1').siblings();
+    elm.css('border','1px solid blue')
+    var elm = $('#item1').prev();
+    elm.css('border','1px solid green')
+  </script>
+</body>
+</html>
